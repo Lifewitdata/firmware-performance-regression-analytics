@@ -15,7 +15,11 @@ capture your own (the app was checked programmatically, not visually).
 
 `firmware_comparison.twbx` is **not** generated here: a real `.twbx` is a zip written by Tableau Desktop.
 `dashboards/tableau_extracts/*.csv` are the data sources. All 14 are refreshed by `python -m src.pipeline`
-(schema-on-read, so no `.hyper` step is needed).
+(schema-on-read, so no `.hyper` step is needed). Twelve are committed; `telemetry.csv` (8 MB) and
+`bearing_health_index.csv` (4.8 MB) are git-ignored, so run the pipeline if you want those two.
+
+For **Tableau Public**, upload these five (~250 KB total): `comparison_by_segment.csv`,
+`device_regression_scores.csv`, `fleet_hourly.csv`, `kaplan_meier_reboot.csv`, `bearing_degradation.csv`.
 
 | Extract | Grain | Rows | Use |
 |---|---|---|---|

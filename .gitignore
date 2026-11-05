@@ -1,7 +1,21 @@
-# Large raw inputs and generated outputs, regenerate per README
+# Raw inputs: 6.2 GB, downloaded/unpacked per README
 data/nasa_ims/
 data/nab/
-data/processed/
+
+# Regenerable outputs. The small analysis results are committed so a fresh clone runs the app
+# and has Tableau-ready CSVs without unpacking the raw data; `python -m src.pipeline` rebuilds all of it.
+data/processed/*
+!data/processed/*.csv
+!data/processed/*.parquet
+!data/processed/*.json
+!data/processed/sql_results/
+data/processed/firmware_analytics.db
+
+# Large Tableau drill-down extracts; the summary extracts are committed
+dashboards/tableau_extracts/telemetry.csv
+dashboards/tableau_extracts/bearing_health_index.csv
+dashboards/*.twbx
+dashboards/screenshots/
 
 # Local artefacts
 .venv/
@@ -10,8 +24,3 @@ __pycache__/
 .pytest_cache/
 .ipynb_checkpoints/
 *.log
-
-# Tableau: the .twbx and the ~13 MB CSV extracts are local artefacts of `python -m src.pipeline`
-dashboards/*.twbx
-dashboards/tableau_extracts/
-dashboards/screenshots/

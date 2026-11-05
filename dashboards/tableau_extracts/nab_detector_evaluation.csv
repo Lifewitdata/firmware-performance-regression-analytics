@@ -1,0 +1,6 @@
+series,anomaly_windows,windows_detected,false_alarm_events,recall,precision
+machine_temperature_system_failure,4,2,20,0.5,0.09090909090909091
+ec2_request_latency_system_failure,3,3,0,1.0,1.0
+ambient_temperature_system_failure,2,1,2,0.5,0.3333333333333333
+cpu_utilization_asg_misconfiguration,1,0,46,0.0,0.0
+ec2_cpu_utilization_825cc2,1,1,4,1.0,0.2

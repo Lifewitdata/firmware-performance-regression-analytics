@@ -1,0 +1,5 @@
+firmware_version,hw_revision,operating_hours,reboots,mtbf_reboot_hours,availability_pct
+1.0.0,A,3024.0,17,177.9,99.473
+2.0.0,A,1312.1,8,164.0,99.4
+1.0.0,B,1198.9,10,119.9,99.906
+2.0.0,B,516.2,24,21.5,99.273

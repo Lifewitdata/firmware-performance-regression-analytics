@@ -1,0 +1,7 @@
+metric,hw_revision,bucket,first_alarm_interval,change_point_interval
+fw_error_count,all,3,,
+fw_error_count,A,3,195.0,108.0
+fw_error_count,B,3,144.0,117.0
+response_time_ms,all,3,123.0,120.0
+response_time_ms,A,3,120.0,117.0
+response_time_ms,B,3,120.0,108.0

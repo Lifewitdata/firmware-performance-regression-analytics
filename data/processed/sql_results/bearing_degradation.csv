@@ -1,0 +1,13 @@
+test_id,bearing,failure_mode,early_rms,late_rms,rms_growth_x,max_kurtosis
+test1,1,none,0.1358,0.1577,1.16,4.7
+test1,2,none,0.1366,0.1579,1.16,3.7
+test1,3,inner race defect,0.139,0.1939,1.39,74.6
+test1,4,roller element defect,0.1184,0.1779,1.5,74.6
+test2,1,outer race failure,0.0777,0.2178,2.8,17.1
+test2,2,none,0.0952,0.1318,1.38,5.5
+test2,3,none,0.1051,0.1356,1.29,6.7
+test2,4,none,0.0556,0.0872,1.57,4.7
+test3,1,none,0.0748,0.0839,1.12,5.1
+test3,2,none,0.086,0.0947,1.1,3.9
+test3,3,outer race failure,0.0665,0.1153,1.73,19.7
+test3,4,none,0.0516,0.074,1.43,4.0

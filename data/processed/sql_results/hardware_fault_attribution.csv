@@ -1,0 +1,29 @@
+source_test,failure_mode,arm,period,devices,hw_fault_rate_pct,reboot_rate_pct
+test1,inner race defect,control,post,3,16.94,0.0
+test1,inner race defect,control,pre,3,0.0,0.0
+test1,inner race defect,treatment,post,5,0.0,0.167
+test1,inner race defect,treatment,pre,5,0.0,0.0
+test1,none,control,post,7,0.0,0.0
+test1,none,control,pre,7,0.0,0.0
+test1,none,treatment,post,9,0.0,0.185
+test1,none,treatment,pre,9,0.0,0.093
+test1,roller element defect,control,post,3,0.0,0.0
+test1,roller element defect,control,pre,3,0.0,0.0
+test1,roller element defect,treatment,post,5,11.5,0.667
+test1,roller element defect,treatment,pre,5,18.0,0.667
+test2,none,control,post,5,0.0,0.0
+test2,none,control,pre,5,0.0,0.333
+test2,none,treatment,post,7,0.0,0.238
+test2,none,treatment,pre,7,0.0,0.119
+test2,outer race failure,control,post,1,0.0,0.0
+test2,outer race failure,control,pre,1,0.0,0.0
+test2,outer race failure,treatment,post,3,4.72,0.278
+test2,outer race failure,treatment,pre,3,0.0,0.0
+test3,none,control,post,35,0.02,0.143
+test3,none,control,pre,35,0.0,0.071
+test3,none,treatment,post,43,0.0,0.329
+test3,none,treatment,pre,43,0.0,0.116
+test3,outer race failure,control,post,6,0.0,0.139
+test3,outer race failure,control,pre,6,0.0,0.278
+test3,outer race failure,treatment,post,20,0.63,0.208
+test3,outer race failure,treatment,pre,20,0.0,0.042

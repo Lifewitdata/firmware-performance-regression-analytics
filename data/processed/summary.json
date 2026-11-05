@@ -1,0 +1,86 @@
+{
+  "headline": "Segment-specific: hw_revision=B -> ROLLBACK; CONTINUE for hw_revision=A.",
+  "decisions": {
+    "fleet": {
+      "decision": "INVESTIGATE",
+      "reasons": [
+        "Mean vibration RMS (g) regressed +4.2% (adj. p=0.00221)",
+        "29% of updated devices individually flagged"
+      ]
+    },
+    "hw_revision=A": {
+      "decision": "CONTINUE",
+      "reasons": [
+        "Firmware errors / 100 intervals improved -45.5%",
+        "Sensor jitter (rel. step-to-step change) improved -63.6%",
+        "Median response time (ms) improved -12.2%",
+        "P95 response time (ms) improved -12.6%"
+      ]
+    },
+    "hw_revision=B": {
+      "decision": "ROLLBACK",
+      "reasons": [
+        "Firmware errors / 100 intervals: +161.9% vs control (adj. p=2.22e-07)",
+        "Reboots / 100 intervals: +200.0% vs control (adj. p=0.00453)",
+        "P95 response time (ms): +21.7% vs control (adj. p=2.29e-30)"
+      ]
+    }
+  },
+  "logrank_time_to_first_reboot": {
+    "A": {
+      "chi2": 0.09431777873641456,
+      "p_value": 0.7587581263607605
+    },
+    "B": {
+      "chi2": 11.747109147977133,
+      "p_value": 0.0006093781342696988
+    }
+  },
+  "change_points": [
+    {
+      "metric": "fw_error_count",
+      "hw_revision": "all",
+      "bucket": 3,
+      "first_alarm_interval": NaN,
+      "change_point_interval": NaN
+    },
+    {
+      "metric": "fw_error_count",
+      "hw_revision": "A",
+      "bucket": 3,
+      "first_alarm_interval": 195.0,
+      "change_point_interval": 108.0
+    },
+    {
+      "metric": "fw_error_count",
+      "hw_revision": "B",
+      "bucket": 3,
+      "first_alarm_interval": 144.0,
+      "change_point_interval": 117.0
+    },
+    {
+      "metric": "response_time_ms",
+      "hw_revision": "all",
+      "bucket": 3,
+      "first_alarm_interval": 123.0,
+      "change_point_interval": 120.0
+    },
+    {
+      "metric": "response_time_ms",
+      "hw_revision": "A",
+      "bucket": 3,
+      "first_alarm_interval": 120.0,
+      "change_point_interval": 117.0
+    },
+    {
+      "metric": "response_time_ms",
+      "hw_revision": "B",
+      "bucket": 3,
+      "first_alarm_interval": 120.0,
+      "change_point_interval": 108.0
+    }
+  ],
+  "flagged_devices": 27,
+  "treated_devices": 92,
+  "nab_detector_mean_recall": 0.6
+}

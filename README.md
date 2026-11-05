@@ -52,7 +52,7 @@ Notebook 04 shows both pitfalls with numbers: naive before/after reports firmwar
 data/nasa_ims/       raw IMS snapshots (1st_test, 2nd_test, 4th_test/txt) — git-ignored, 6.2 GB
 data/nab/            5 NAB series + official anomaly labels — git-ignored
 data/firmware_metadata/  devices, firmware releases, injected ground truth
-data/processed/      parquet outputs + SQLite DB + SQL report CSVs
+data/processed/      analysis outputs — CSV/parquet committed (~4.8 MB), SQLite DB git-ignored
 notebooks/01..06     the analysis, executed with stored outputs
 sql/                 schema + comparison / metrics / reliability queries
 src/                 modules (preprocessing, experiment design, metrics, tests, detection, reliability)
@@ -77,7 +77,8 @@ pytest                            # 19 tests
 streamlit run app/streamlit_app.py
 ```
 
-`data/` is large and git-ignored; `python -m src.pipeline` regenerates everything under `data/processed/` from the raw inputs.
+The committed `data/processed/` outputs mean a fresh clone can run the app and open the Tableau extracts
+immediately, without unpacking 6.2 GB of raw data. `python -m src.pipeline` regenerates them from the raw inputs.
 
 ## Modules
 
@@ -106,7 +107,9 @@ KPI/percentile/trend tables, MTBF, fault attribution, bearing degradation. Porta
 * **Streamlit** (`app/streamlit_app.py`): decision, DiD forests, trends, device regression map + drill-down,
   reliability, raw sensor browser, provenance/validation tab.
 * **Tableau**: `dashboards/tableau_extracts/*.csv` — 14 data sources covering every sheet (schema-on-read, no `.hyper`).
-  They are ~13 MB of generated output, so they are git-ignored: run `python -m src.pipeline` to create them.
+  The 12 summary extracts (~250 KB) are committed; `telemetry.csv` and `bearing_health_index.csv` are git-ignored and
+  rebuilt by `python -m src.pipeline`. For **Tableau Public**, the five files you need are
+  `comparison_by_segment`, `device_regression_scores`, `fleet_hourly`, `kaplan_meier_reboot`, `bearing_degradation`.
   Build steps in [dashboards/README.md](file:///C:/Users/hp/Documents/Qoder/2026-11-05/dbc2c567/dashboards/README.md).
   A real `.twbx` must be assembled in Tableau Desktop; it is not machine-generated here.
 

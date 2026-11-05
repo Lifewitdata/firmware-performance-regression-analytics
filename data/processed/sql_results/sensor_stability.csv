@@ -1,0 +1,9 @@
+arm,period,hw_revision,sensor_jitter
+control,post,A,0.0132
+control,pre,A,0.012
+treatment,post,A,0.0059
+treatment,pre,A,0.0138
+control,post,B,0.0116
+control,pre,B,0.0115
+treatment,post,B,0.0071
+treatment,pre,B,0.013
