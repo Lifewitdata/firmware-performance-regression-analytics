@@ -1,6 +1,7 @@
 # Firmware Version Performance & Hardware Regression Analytics
 
-**Live dashboard:** <https://firmware-performance-regression-analytics-mjchju7kbcnhuc757mp4.streamlit.app/>
+**Live dashboards:** [Streamlit](https://firmware-performance-regression-analytics-mjchju7kbcnhuc757mp4.streamlit.app/)
+· [Tableau Public](https://public.tableau.com/app/profile/isfaque.ansari5273/viz/Firmware_Performance_Hardware_Regressions/01FirmwarePerformance)
 
 Does firmware v2.0 improve device performance, or introduce hardware problems?
 
@@ -113,12 +114,13 @@ KPI/percentile/trend tables, MTBF, fault attribution, bearing degradation. Porta
 * **Streamlit** ([live app](https://firmware-performance-regression-analytics-mjchju7kbcnhuc757mp4.streamlit.app/),
   source `app/streamlit_app.py`): decision, DiD forests, trends, device regression map + drill-down,
   reliability, raw sensor browser, provenance/validation tab.
-* **Tableau**: `dashboards/tableau_extracts/*.csv` — 14 data sources covering every sheet (schema-on-read, no `.hyper`).
+* **Tableau** ([published workbook](https://public.tableau.com/app/profile/isfaque.ansari5273/viz/Firmware_Performance_Hardware_Regressions/01FirmwarePerformance),
+  built from the extracts below): `dashboards/tableau_extracts/*.csv` — 14 data sources covering every sheet (schema-on-read, no `.hyper`).
   The 12 summary extracts (~250 KB) are committed; `telemetry.csv` and `bearing_health_index.csv` are git-ignored and
   rebuilt by `python -m src.pipeline`. For **Tableau Public**, the five files you need are
   `comparison_by_segment`, `device_regression_scores`, `fleet_hourly`, `kaplan_meier_reboot`, `bearing_degradation`.
   Build steps in [dashboards/README.md](file:///C:/Users/hp/Documents/Qoder/2026-11-05/dbc2c567/dashboards/README.md).
-  A real `.twbx` must be assembled in Tableau Desktop; it is not machine-generated here.
+  The workbook itself is assembled in Tableau Desktop; it is not machine-generated here.
 
 ## Reading the result
 
