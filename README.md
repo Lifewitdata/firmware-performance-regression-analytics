@@ -80,6 +80,9 @@ streamlit run app/streamlit_app.py
 The committed `data/processed/` outputs mean a fresh clone can run the app and open the Tableau extracts
 immediately, without unpacking 6.2 GB of raw data. `python -m src.pipeline` regenerates them from the raw inputs.
 
+If the app reports missing analysis outputs, your checkout predates commit `fa8e783` (2026-11-05), when those
+outputs were committed — run `git pull origin main` and restart Streamlit.
+
 ## Modules
 
 | Module | Responsibility |

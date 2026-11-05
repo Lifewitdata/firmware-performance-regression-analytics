@@ -26,10 +26,19 @@ VERDICT_COLORS = {"improved": "#1a7f37", "regressed": "#cf222e", "no significant
 st.set_page_config(page_title="Firmware Regression Analytics", layout="wide")
 
 
+REQUIRED_OUTPUTS = ("summary.json", "telemetry.parquet", "device_period_kpis.parquet", "ims_features.parquet",
+                    "comparison_overall.csv", "comparison_by_segment.csv", "device_regression_scores.csv",
+                    "event_rate_tests.csv", "naive_comparison.csv", "mtbf.csv", "time_to_first_reboot.csv",
+                    "nab_detector_evaluation.csv", "bearing_degradation.csv")
+
+
 @st.cache_data
 def load():
-    if not (P / "summary.json").exists():
-        return None
+    missing = [f for f in REQUIRED_OUTPUTS if not (P / f).exists()]
+    missing += [f"firmware_metadata/{f}" for f in ("firmware_effects_ground_truth.json", "devices.csv",
+                                                   "firmware_releases.csv") if not (FW / f).exists()]
+    if missing:
+        return {"missing": missing}
     return {
         "summary": json.loads((P / "summary.json").read_text()),
         "tel": pd.read_parquet(P / "telemetry.parquet"),
@@ -50,8 +59,11 @@ def load():
 
 
 D = load()
-if D is None:
-    st.error("No processed outputs found. Run `python -m src.pipeline` from the project root first.")
+if "missing" in D:
+    st.error("Missing analysis outputs: " + ", ".join(D["missing"]))
+    st.caption(f"Looked in `{P.resolve()}`.")
+    st.markdown("These files are committed in the repo, so an outdated checkout is the usual cause:")
+    st.code("git pull origin main\n\n# or regenerate them from the raw inputs:\npython -m src.pipeline", language="bash")
     st.stop()
 
 st.title("Firmware v2.0 Performance & Hardware Regression Analytics")
