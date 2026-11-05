@@ -1,0 +1,153 @@
+device_id,source_test,source_bearing,window_index,source_start_idx,source_start_time,failure_mode,contains_end_of_life,hw_revision,region,group
+DEV-0001,test1,1,0,0,2003-10-22 12:06:24,none,False,A,EU-West,treatment
+DEV-0002,test1,1,1,240,2003-10-31 00:59:46,none,False,A,NA-East,treatment
+DEV-0003,test1,1,2,480,2003-11-01 18:41:44,none,False,A,NA-East,control
+DEV-0004,test1,1,3,720,2003-11-09 08:20:39,none,False,A,EU-West,control
+DEV-0005,test1,1,4,960,2003-11-14 22:38:46,none,False,B,NA-East,treatment
+DEV-0006,test1,1,5,1200,2003-11-16 14:38:46,none,False,A,NA-East,control
+DEV-0007,test1,1,6,1440,2003-11-19 11:16:07,none,False,A,EU-West,control
+DEV-0008,test1,1,7,1680,2003-11-21 12:38:36,none,False,A,APAC,treatment
+DEV-0009,test1,2,0,0,2003-10-22 12:06:24,none,False,B,NA-East,treatment
+DEV-0010,test1,2,1,240,2003-10-31 00:59:46,none,False,A,NA-East,treatment
+DEV-0011,test1,2,2,480,2003-11-01 18:41:44,none,False,A,NA-East,treatment
+DEV-0012,test1,2,3,720,2003-11-09 08:20:39,none,False,A,EU-West,control
+DEV-0013,test1,2,4,960,2003-11-14 22:38:46,none,False,A,APAC,control
+DEV-0014,test1,2,5,1200,2003-11-16 14:38:46,none,False,A,APAC,treatment
+DEV-0015,test1,2,6,1440,2003-11-19 11:16:07,none,False,A,APAC,treatment
+DEV-0016,test1,2,7,1680,2003-11-21 12:38:36,none,False,B,APAC,control
+DEV-0017,test1,3,0,0,2003-10-22 12:06:24,inner race defect,False,A,NA-East,treatment
+DEV-0018,test1,3,1,240,2003-10-31 00:59:46,inner race defect,False,B,NA-East,control
+DEV-0019,test1,3,2,480,2003-11-01 18:41:44,inner race defect,False,A,EU-West,treatment
+DEV-0020,test1,3,3,720,2003-11-09 08:20:39,inner race defect,False,A,APAC,treatment
+DEV-0021,test1,3,4,960,2003-11-14 22:38:46,inner race defect,False,A,APAC,treatment
+DEV-0022,test1,3,5,1200,2003-11-16 14:38:46,inner race defect,False,A,NA-East,control
+DEV-0023,test1,3,6,1440,2003-11-19 11:16:07,inner race defect,False,A,NA-East,treatment
+DEV-0024,test1,3,7,1680,2003-11-21 12:38:36,inner race defect,True,A,NA-East,control
+DEV-0025,test1,4,0,0,2003-10-22 12:06:24,roller element defect,False,A,NA-East,treatment
+DEV-0026,test1,4,1,240,2003-10-31 00:59:46,roller element defect,False,B,EU-West,treatment
+DEV-0027,test1,4,2,480,2003-11-01 18:41:44,roller element defect,False,A,EU-West,control
+DEV-0028,test1,4,3,720,2003-11-09 08:20:39,roller element defect,False,B,EU-West,control
+DEV-0029,test1,4,4,960,2003-11-14 22:38:46,roller element defect,False,B,NA-East,treatment
+DEV-0030,test1,4,5,1200,2003-11-16 14:38:46,roller element defect,False,A,APAC,control
+DEV-0031,test1,4,6,1440,2003-11-19 11:16:07,roller element defect,False,A,EU-West,treatment
+DEV-0032,test1,4,7,1680,2003-11-21 12:38:36,roller element defect,True,A,APAC,treatment
+DEV-0033,test2,1,0,0,2004-02-12 10:32:39,outer race failure,False,A,APAC,control
+DEV-0034,test2,1,1,240,2004-02-14 02:32:39,outer race failure,False,A,NA-East,treatment
+DEV-0035,test2,1,2,480,2004-02-15 18:32:39,outer race failure,False,A,NA-East,treatment
+DEV-0036,test2,1,3,720,2004-02-17 10:32:39,outer race failure,True,B,APAC,treatment
+DEV-0037,test2,2,0,0,2004-02-12 10:32:39,none,False,B,EU-West,treatment
+DEV-0038,test2,2,1,240,2004-02-14 02:32:39,none,False,A,NA-East,treatment
+DEV-0039,test2,2,2,480,2004-02-15 18:32:39,none,False,B,EU-West,control
+DEV-0040,test2,2,3,720,2004-02-17 10:32:39,none,False,A,EU-West,treatment
+DEV-0041,test2,3,0,0,2004-02-12 10:32:39,none,False,A,APAC,control
+DEV-0042,test2,3,1,240,2004-02-14 02:32:39,none,False,A,NA-East,control
+DEV-0043,test2,3,2,480,2004-02-15 18:32:39,none,False,A,APAC,treatment
+DEV-0044,test2,3,3,720,2004-02-17 10:32:39,none,False,A,APAC,treatment
+DEV-0045,test2,4,0,0,2004-02-12 10:32:39,none,False,A,NA-East,control
+DEV-0046,test2,4,1,240,2004-02-14 02:32:39,none,False,A,NA-East,treatment
+DEV-0047,test2,4,2,480,2004-02-15 18:32:39,none,False,A,EU-West,control
+DEV-0048,test2,4,3,720,2004-02-17 10:32:39,none,False,B,NA-East,treatment
+DEV-0049,test3,1,0,0,2004-03-04 09:27:46,none,False,A,NA-East,control
+DEV-0050,test3,1,1,240,2004-03-06 01:22:46,none,False,B,EU-West,control
+DEV-0051,test3,1,2,480,2004-03-07 17:22:46,none,False,B,APAC,treatment
+DEV-0052,test3,1,3,720,2004-03-09 09:22:46,none,False,B,APAC,treatment
+DEV-0053,test3,1,4,960,2004-03-11 01:22:46,none,False,A,NA-East,treatment
+DEV-0054,test3,1,5,1200,2004-03-12 17:22:46,none,False,A,APAC,control
+DEV-0055,test3,1,6,1440,2004-03-14 09:22:46,none,False,A,NA-East,treatment
+DEV-0056,test3,1,7,1680,2004-03-16 05:35:20,none,False,A,APAC,treatment
+DEV-0057,test3,1,8,1920,2004-03-17 21:35:20,none,False,A,APAC,control
+DEV-0058,test3,1,9,2160,2004-03-19 20:51:57,none,False,A,APAC,treatment
+DEV-0059,test3,1,10,2400,2004-03-21 12:51:57,none,False,B,NA-East,control
+DEV-0060,test3,1,11,2640,2004-03-23 04:51:57,none,False,B,APAC,treatment
+DEV-0061,test3,1,12,2880,2004-03-24 20:51:57,none,False,A,NA-East,treatment
+DEV-0062,test3,1,13,3120,2004-03-26 12:51:57,none,False,A,EU-West,control
+DEV-0063,test3,1,14,3360,2004-03-28 04:51:57,none,False,A,EU-West,control
+DEV-0064,test3,1,15,3600,2004-03-29 20:51:57,none,False,A,NA-East,treatment
+DEV-0065,test3,1,16,3840,2004-03-31 12:51:57,none,False,A,NA-East,control
+DEV-0066,test3,1,17,4080,2004-04-02 04:51:57,none,False,A,APAC,treatment
+DEV-0067,test3,1,18,4320,2004-04-03 20:51:57,none,False,A,EU-West,control
+DEV-0068,test3,1,19,4560,2004-04-05 13:51:57,none,False,A,EU-West,control
+DEV-0069,test3,1,20,4800,2004-04-07 05:51:57,none,False,B,EU-West,control
+DEV-0070,test3,1,21,5040,2004-04-08 21:51:57,none,False,A,EU-West,treatment
+DEV-0071,test3,1,22,5280,2004-04-10 13:51:57,none,False,B,APAC,treatment
+DEV-0072,test3,1,23,5520,2004-04-12 05:51:57,none,False,A,NA-East,treatment
+DEV-0073,test3,1,24,5760,2004-04-13 21:51:57,none,False,A,APAC,control
+DEV-0074,test3,1,25,6000,2004-04-15 20:52:55,none,False,B,APAC,control
+DEV-0075,test3,2,0,0,2004-03-04 09:27:46,none,False,B,EU-West,treatment
+DEV-0076,test3,2,1,240,2004-03-06 01:22:46,none,False,B,NA-East,treatment
+DEV-0077,test3,2,2,480,2004-03-07 17:22:46,none,False,B,NA-East,control
+DEV-0078,test3,2,3,720,2004-03-09 09:22:46,none,False,A,APAC,control
+DEV-0079,test3,2,4,960,2004-03-11 01:22:46,none,False,A,APAC,treatment
+DEV-0080,test3,2,5,1200,2004-03-12 17:22:46,none,False,A,NA-East,treatment
+DEV-0081,test3,2,6,1440,2004-03-14 09:22:46,none,False,A,NA-East,control
+DEV-0082,test3,2,7,1680,2004-03-16 05:35:20,none,False,A,NA-East,control
+DEV-0083,test3,2,8,1920,2004-03-17 21:35:20,none,False,A,NA-East,control
+DEV-0084,test3,2,9,2160,2004-03-19 20:51:57,none,False,B,APAC,control
+DEV-0085,test3,2,10,2400,2004-03-21 12:51:57,none,False,B,APAC,treatment
+DEV-0086,test3,2,11,2640,2004-03-23 04:51:57,none,False,B,NA-East,treatment
+DEV-0087,test3,2,12,2880,2004-03-24 20:51:57,none,False,A,APAC,treatment
+DEV-0088,test3,2,13,3120,2004-03-26 12:51:57,none,False,A,NA-East,treatment
+DEV-0089,test3,2,14,3360,2004-03-28 04:51:57,none,False,B,EU-West,control
+DEV-0090,test3,2,15,3600,2004-03-29 20:51:57,none,False,A,EU-West,treatment
+DEV-0091,test3,2,16,3840,2004-03-31 12:51:57,none,False,B,APAC,treatment
+DEV-0092,test3,2,17,4080,2004-04-02 04:51:57,none,False,A,APAC,control
+DEV-0093,test3,2,18,4320,2004-04-03 20:51:57,none,False,A,NA-East,control
+DEV-0094,test3,2,19,4560,2004-04-05 13:51:57,none,False,A,NA-East,control
+DEV-0095,test3,2,20,4800,2004-04-07 05:51:57,none,False,A,NA-East,treatment
+DEV-0096,test3,2,21,5040,2004-04-08 21:51:57,none,False,A,NA-East,treatment
+DEV-0097,test3,2,22,5280,2004-04-10 13:51:57,none,False,A,APAC,treatment
+DEV-0098,test3,2,23,5520,2004-04-12 05:51:57,none,False,B,APAC,treatment
+DEV-0099,test3,2,24,5760,2004-04-13 21:51:57,none,False,B,NA-East,control
+DEV-0100,test3,2,25,6000,2004-04-15 20:52:55,none,False,A,APAC,treatment
+DEV-0101,test3,3,0,0,2004-03-04 09:27:46,outer race failure,False,A,EU-West,treatment
+DEV-0102,test3,3,1,240,2004-03-06 01:22:46,outer race failure,False,A,EU-West,control
+DEV-0103,test3,3,2,480,2004-03-07 17:22:46,outer race failure,False,B,EU-West,control
+DEV-0104,test3,3,3,720,2004-03-09 09:22:46,outer race failure,False,A,NA-East,treatment
+DEV-0105,test3,3,4,960,2004-03-11 01:22:46,outer race failure,False,A,APAC,control
+DEV-0106,test3,3,5,1200,2004-03-12 17:22:46,outer race failure,False,A,NA-East,treatment
+DEV-0107,test3,3,6,1440,2004-03-14 09:22:46,outer race failure,False,A,NA-East,treatment
+DEV-0108,test3,3,7,1680,2004-03-16 05:35:20,outer race failure,False,B,NA-East,treatment
+DEV-0109,test3,3,8,1920,2004-03-17 21:35:20,outer race failure,False,B,NA-East,control
+DEV-0110,test3,3,9,2160,2004-03-19 20:51:57,outer race failure,False,A,NA-East,treatment
+DEV-0111,test3,3,10,2400,2004-03-21 12:51:57,outer race failure,False,A,NA-East,treatment
+DEV-0112,test3,3,11,2640,2004-03-23 04:51:57,outer race failure,False,B,APAC,treatment
+DEV-0113,test3,3,12,2880,2004-03-24 20:51:57,outer race failure,False,A,APAC,treatment
+DEV-0114,test3,3,13,3120,2004-03-26 12:51:57,outer race failure,False,A,NA-East,treatment
+DEV-0115,test3,3,14,3360,2004-03-28 04:51:57,outer race failure,False,B,NA-East,treatment
+DEV-0116,test3,3,15,3600,2004-03-29 20:51:57,outer race failure,False,A,EU-West,treatment
+DEV-0117,test3,3,16,3840,2004-03-31 12:51:57,outer race failure,False,A,APAC,control
+DEV-0118,test3,3,17,4080,2004-04-02 04:51:57,outer race failure,False,A,APAC,control
+DEV-0119,test3,3,18,4320,2004-04-03 20:51:57,outer race failure,False,A,APAC,treatment
+DEV-0120,test3,3,19,4560,2004-04-05 13:51:57,outer race failure,False,A,EU-West,treatment
+DEV-0121,test3,3,20,4800,2004-04-07 05:51:57,outer race failure,False,A,EU-West,treatment
+DEV-0122,test3,3,21,5040,2004-04-08 21:51:57,outer race failure,False,A,NA-East,treatment
+DEV-0123,test3,3,22,5280,2004-04-10 13:51:57,outer race failure,False,B,APAC,treatment
+DEV-0124,test3,3,23,5520,2004-04-12 05:51:57,outer race failure,False,A,APAC,treatment
+DEV-0125,test3,3,24,5760,2004-04-13 21:51:57,outer race failure,False,B,NA-East,treatment
+DEV-0126,test3,3,25,6000,2004-04-15 20:52:55,outer race failure,True,A,APAC,treatment
+DEV-0127,test3,4,0,0,2004-03-04 09:27:46,none,False,A,NA-East,control
+DEV-0128,test3,4,1,240,2004-03-06 01:22:46,none,False,B,APAC,treatment
+DEV-0129,test3,4,2,480,2004-03-07 17:22:46,none,False,B,APAC,treatment
+DEV-0130,test3,4,3,720,2004-03-09 09:22:46,none,False,A,NA-East,treatment
+DEV-0131,test3,4,4,960,2004-03-11 01:22:46,none,False,B,EU-West,treatment
+DEV-0132,test3,4,5,1200,2004-03-12 17:22:46,none,False,A,NA-East,control
+DEV-0133,test3,4,6,1440,2004-03-14 09:22:46,none,False,A,EU-West,control
+DEV-0134,test3,4,7,1680,2004-03-16 05:35:20,none,False,A,APAC,treatment
+DEV-0135,test3,4,8,1920,2004-03-17 21:35:20,none,False,A,NA-East,treatment
+DEV-0136,test3,4,9,2160,2004-03-19 20:51:57,none,False,B,EU-West,control
+DEV-0137,test3,4,10,2400,2004-03-21 12:51:57,none,False,A,APAC,control
+DEV-0138,test3,4,11,2640,2004-03-23 04:51:57,none,False,A,NA-East,treatment
+DEV-0139,test3,4,12,2880,2004-03-24 20:51:57,none,False,A,NA-East,treatment
+DEV-0140,test3,4,13,3120,2004-03-26 12:51:57,none,False,B,EU-West,control
+DEV-0141,test3,4,14,3360,2004-03-28 04:51:57,none,False,A,EU-West,treatment
+DEV-0142,test3,4,15,3600,2004-03-29 20:51:57,none,False,A,EU-West,treatment
+DEV-0143,test3,4,16,3840,2004-03-31 12:51:57,none,False,A,NA-East,control
+DEV-0144,test3,4,17,4080,2004-04-02 04:51:57,none,False,A,APAC,control
+DEV-0145,test3,4,18,4320,2004-04-03 20:51:57,none,False,A,EU-West,treatment
+DEV-0146,test3,4,19,4560,2004-04-05 13:51:57,none,False,B,NA-East,control
+DEV-0147,test3,4,20,4800,2004-04-07 05:51:57,none,False,A,APAC,treatment
+DEV-0148,test3,4,21,5040,2004-04-08 21:51:57,none,False,A,APAC,treatment
+DEV-0149,test3,4,22,5280,2004-04-10 13:51:57,none,False,A,EU-West,treatment
+DEV-0150,test3,4,23,5520,2004-04-12 05:51:57,none,False,B,NA-East,treatment
+DEV-0151,test3,4,24,5760,2004-04-13 21:51:57,none,False,A,EU-West,control
+DEV-0152,test3,4,25,6000,2004-04-15 20:52:55,none,False,A,EU-West,control

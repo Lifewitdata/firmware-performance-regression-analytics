@@ -1,0 +1,60 @@
+{
+  "WARNING": "Experimental, injected effects. Used only to validate the analysis, never as an input to it.",
+  "seed": 42,
+  "window_intervals": 240,
+  "rollout_interval": 120,
+  "interval_minutes": 10,
+  "effects_v2_vs_v1": {
+    "sensor_filter_alpha": 0.5,
+    "rms_gain": {
+      "A": 1.0,
+      "B": 1.06
+    },
+    "response_time": {
+      "A": 0.88,
+      "B": 1.22
+    },
+    "fw_error_rate": {
+      "A": 0.75,
+      "B": 2.2
+    },
+    "reboot_prob": {
+      "A": 0.001,
+      "B": 0.008
+    },
+    "baseline_reboot_prob": 0.001,
+    "baseline_fw_error_rate": 0.04,
+    "fault_downtime_min": 5.0
+  },
+  "column_origin": {
+    "real (NASA IMS)": [
+      "source_timestamp",
+      "real_rms",
+      "real_kurtosis",
+      "real_peak",
+      "hardware_fault"
+    ],
+    "real (NAB ec2_request_latency) + experimental firmware effect": [
+      "response_time_ms"
+    ],
+    "real IMS signal + experimental firmware filter/calibration": [
+      "vib_rms",
+      "vib_kurtosis",
+      "vib_peak",
+      "vibration_alarm"
+    ],
+    "experimental": [
+      "device_id",
+      "timestamp",
+      "firmware_version",
+      "period",
+      "group",
+      "hw_revision",
+      "region",
+      "fw_error_count",
+      "reboot",
+      "downtime_min",
+      "uptime_pct"
+    ]
+  }
+}

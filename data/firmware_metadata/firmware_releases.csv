@@ -1,0 +1,3 @@
+firmware_version,release_date,status,notes
+1.0.0,2025-06-02,stable,Baseline production firmware.
+2.0.0,2026-01-05,staged rollout,"New DSP filter on vibration channel, async telemetry stack, new I2C driver."

@@ -1,0 +1,17 @@
+# Large raw inputs and generated outputs, regenerate per README
+data/nasa_ims/
+data/nab/
+data/processed/
+
+# Local artefacts
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+*.log
+
+# Tableau: the .twbx and the ~13 MB CSV extracts are local artefacts of `python -m src.pipeline`
+dashboards/*.twbx
+dashboards/tableau_extracts/
+dashboards/screenshots/
