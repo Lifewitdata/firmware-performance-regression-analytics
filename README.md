@@ -1,5 +1,7 @@
 # Firmware Version Performance & Hardware Regression Analytics
 
+**Live dashboard:** <https://firmware-performance-regression-analytics-mjchju7kbcnhuc757mp4.streamlit.app/>
+
 Does firmware v2.0 improve device performance, or introduce hardware problems?
 
 A hardware team ships firmware **v2.0.0** to a staged cohort. This repo measures the update against devices that stayed
@@ -79,6 +81,7 @@ streamlit run app/streamlit_app.py
 
 The committed `data/processed/` outputs mean a fresh clone can run the app and open the Tableau extracts
 immediately, without unpacking 6.2 GB of raw data. `python -m src.pipeline` regenerates them from the raw inputs.
+To just look at the results, use the [hosted dashboard](https://firmware-performance-regression-analytics-mjchju7kbcnhuc757mp4.streamlit.app/) — no install needed.
 
 If the app reports missing analysis outputs, your checkout predates commit `fa8e783` (2026-11-05), when those
 outputs were committed — run `git pull origin main` and restart Streamlit.
@@ -107,7 +110,8 @@ KPI/percentile/trend tables, MTBF, fault attribution, bearing degradation. Porta
 
 ## Dashboards
 
-* **Streamlit** (`app/streamlit_app.py`): decision, DiD forests, trends, device regression map + drill-down,
+* **Streamlit** ([live app](https://firmware-performance-regression-analytics-mjchju7kbcnhuc757mp4.streamlit.app/),
+  source `app/streamlit_app.py`): decision, DiD forests, trends, device regression map + drill-down,
   reliability, raw sensor browser, provenance/validation tab.
 * **Tableau**: `dashboards/tableau_extracts/*.csv` — 14 data sources covering every sheet (schema-on-read, no `.hyper`).
   The 12 summary extracts (~250 KB) are committed; `telemetry.csv` and `bearing_health_index.csv` are git-ignored and
